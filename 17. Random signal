@@ -1,1 +1,16 @@
+// Clear all variables and close all figures
+clear;
+close;
 
+// Define time range
+t1 = -5:5;
+
+// Generate random signal
+x6 = grand(1, length(t1), "nor", 0, 1);  // Normal distribution, mean 0, std deviation 1
+
+// Plot the random signal
+subplot(2, 4, 6);
+plot2d(t1, x6);
+xlabel("time");
+ylabel("Amplitude");
+title("Random signal");
