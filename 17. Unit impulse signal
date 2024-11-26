@@ -1,0 +1,9 @@
+clear;
+clc;
+N = 5; // Set limit
+t1 = -N:N; // Time vector from -N to N
+x1 = [zeros(1, N), 1, zeros(1, N)]; // Unit impulse signal
+
+subplot(2, 4, 1);
+plot2d3(t1, x1); // Use plot2d3 for discrete-time signals
+xtitle('Unit Impulse Signal', 'Time', 'Amplitude');
