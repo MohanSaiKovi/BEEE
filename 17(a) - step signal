@@ -1,0 +1,10 @@
+clear;
+close;
+N = 5; 
+t1 = -5:5;
+x2 = [zeros(1, N), ones(1, N+1)];
+subplot(2, 4, 2);
+plot2d3(t1, x2);
+xlabel("time");
+ylabel("Amplitude");
+title("Unit step signal");
